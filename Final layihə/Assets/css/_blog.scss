@@ -1,0 +1,144 @@
+main{
+
+    .section__blog{
+        padding: 40px 0;
+        background-color: #fcfcfc;
+        .blog{
+
+            .blog__content{
+                text-align: center;
+                padding: 40px 0;
+                .titel{
+                    margin: 40px 0;
+                }
+            }
+
+            .blog__list{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                .blog__card{
+                    background-color: #fff;
+                    -webkit-box-shadow: 0 5px 10px 0 rgb(26 47 51 / 11%);
+                    box-shadow: 0 5px 10px 0 rgb(26 47 51 / 11%);
+                    border-radius: 5px;
+                    width: 33%;
+                    margin-bottom: 40px;
+                    max-width: 340px;
+                    max-height: 550px;
+                    min-height: 550px;
+                    .card__img{
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        img{
+                            border-radius: 5px 5px 0 0;
+                            width: 100%;
+                            height: 100%;
+                            vertical-align: bottom;
+                            transition: .4s ease-in-out;
+                            cursor: pointer;
+                            &:hover{
+                                transform: scale(1.05);
+                            }
+                        }
+                    }
+                    .card__content{
+                        padding: 20px;
+                        .minititel{
+                            margin: 10px 0 20px 0;
+                            cursor: pointer;
+                        }
+                        p{
+                            margin: 15px 0;
+                            overflow-y: auto;
+                            max-height: 100px;
+                            min-height: 100px;
+                        }
+                        border-bottom: dotted 2px rgba(26,47,51,.2);
+                    }
+                    .card__users{
+                        padding: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 20px;
+                        .card__users__left{
+                            width: 15%;
+                            img{
+                                width: 80%;
+                                border-radius:100%;
+                            }
+                        }
+                        .card__users__center{
+                            width: 60%;
+                            h1{
+                                font-size: 20px;
+                            }
+                        }
+                        .card__users__right{
+                            display: flex;
+                            align-items: center;
+                            width: 20%;
+                        }
+                    }
+                    &::before{
+
+                    }
+                }
+            }
+
+            .pagination{
+                margin: 40px 0;
+                .pagenation__active{
+                    background-color: #9e2d0f;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 24px;
+                    color: #fff;
+                    padding: 10px 15px;
+                }
+                a{
+                    width: 40px;
+                    height: 40px;
+                    font-size: 24px;
+                    color: black;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width:999px) {
+    main{
+        .section__blog{
+            .blog{
+                .blog__list{
+                    gap: 10px;
+                    .blog__card{
+                        width: 48%;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media (max-width:550px) {
+    main{
+        .section__blog{
+            .blog{
+                .blog__list{
+                    .blog__card{
+                        width: 100%;
+                        margin: 0 auto 20px;
+                    }
+                }
+            }
+        }
+    }
+}

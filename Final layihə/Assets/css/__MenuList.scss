@@ -1,0 +1,102 @@
+
+
+main{
+
+    .menu__content{
+        text-align: center;
+        padding: 40px 0;
+        margin-bottom: 20px;
+    }
+
+    .menu__box{
+        display: flex;
+        align-items: center;
+        width: 48%;
+        .menu__product__img{
+            width: 25%;
+            height: 100px;
+            border-radius: 5px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                -webkit-transition: .4s ease-in-out;
+                transition: .4s ease-in-out;
+                &:hover{
+                    -webkit-transform: scale(1.05);
+                    transform: scale(1.05);
+                }
+            }
+        }
+        .menu__product__content{
+            width: 75%;
+            padding: 20px;
+            .menu__product__content__top{
+                position: relative;
+                .menu__product__name{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 5px;
+                    background-color: #fcfcfc;
+                    .minititel{
+                        background-color: #fcfcfc;
+                        font-size: 24px;
+                    }
+                }
+                .menu__product__price{
+                    width: 100%;
+                    text-align: end;
+                    .minititel{
+                        font-family: "Josefin Sans",sans-serif;
+                        font-size: 24px;
+                        font-weight: 400;
+                        border-bottom: 2px dotted black;
+                    }
+                }
+            }
+            .menu__product__content__bottom{
+                p{
+                    margin: 10px 0;
+                    width: 100%;
+                    height: 70px;
+                    overflow-y: auto;
+                }
+            }
+        }
+    }
+
+    .menu__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding:0 0 60px 0;
+    }
+
+    .menu__dishes{
+        background-color: #fcfcfc;
+    }
+    
+    .menu__salads{
+        background-color: #fcfcfc;
+    }
+
+    .menu__drinks{
+        background-color: #fcfcfc;
+    }
+
+    .menu__desserts{
+        background-color: #fcfcfc;
+    }
+
+
+}
+
+@media (max-width:550px){
+    main{
+        .product__box{
+            width: 100%;
+        }
+    }
+}
